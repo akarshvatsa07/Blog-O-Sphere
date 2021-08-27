@@ -1,0 +1,34 @@
+<%- include("partials/header") -%>
+
+    <h1>Home</h1>
+    <p>
+        <%= homeSC %>
+    </p>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <% homeposts.forEach(function(post) { %>
+
+                <div class="col-lg-3 col-sm-6">
+                    <h1>
+                        <%= post.title %>
+                    </h1>
+                    <p>
+                        <% if(post.body.length>= 100) { %>
+                            <%= post.body.substring(0,100)+"..." %>
+                                <a href="/posts/<%= post._id %>">Read More</a>
+                                <% } else { %>
+                                    <%= post.body %>
+                                        <% } %>
+                    </p>
+                </div>
+                <% }); %>
+        </div>
+        <button class="btn btn-dark" onclick="window.location.href='/compose';" type="submit" name="submit">Write your
+            own Blog</button>
+    </div>
+
+
+    <%- include("partials/footer") -%>

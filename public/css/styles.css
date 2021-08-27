@@ -1,0 +1,44 @@
+p{
+    margin-top: 0;
+    margin-bottom: 0.5rem;  
+}
+.container-fluid {
+    padding-top: 80px;
+    padding-left: 10px;
+}  
+.container{
+  background-color: aliceblue;
+  padding: 24px 30px 30px 30px;
+}
+.headingcontent{
+ padding:22px;
+}
+
+.headingcontent p{
+  font-size: 1.2rem;
+}
+.navbar-nav{
+    margin-right: 5rem;
+    font-size: 1.3rem;
+}
+
+.navbar-brand{
+    margin-left: 4rem;
+    font-size: 2rem;
+}
+
+.navbar-nav li{
+    padding-right: 2.5rem;
+}
+
+.btn-dark {
+    margin: auto;
+    display: block;
+    margin-top: 25px;
+    background-color: #062a4d;
+    border-color: #f0f8ff;
+}
+
+.navbar{
+    background-color: #052545;
+}
